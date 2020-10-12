@@ -38,7 +38,7 @@ nav a:hover {
 
 h2 {
   color: var(--black-color);
-  font-size: 12rem;
+  font-size: 10rem;
   font-weight: 700;
   font-style: italic;
   cursor: pointer;
@@ -49,7 +49,7 @@ h2:hover {
 }
 
 p {
-  font-size: 4rem;
+  font-size: 2.5rem;
   padding-left: 3rem;
   background-color: var(--bg-color);
 }
@@ -79,9 +79,9 @@ section {
 
 .deco__circle {
   position: absolute;
-  width: 70rem;
-  top: 10vh;
-  right: 20vw
+  width: 70vh;
+  top: 5vh;
+  right: 10vw
 }
 
 .deco__circle svg {
