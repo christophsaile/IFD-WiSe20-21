@@ -21,6 +21,7 @@ body {
 nav {
   position: absolute;
   display: flex;
+  justify-content: center;
   top: 0;
   left: 1rem;
   bottom: 0;
@@ -28,9 +29,13 @@ nav {
 }
 
 nav a {
-  margin: auto;
+  padding-bottom: 3rem;
   font-size: 2rem;
   color: var(--black-color);
+}
+
+nav a:last-child {
+  padding-bottom: 0;
 }
 
 nav a:hover {
