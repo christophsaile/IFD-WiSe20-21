@@ -11,15 +11,13 @@ function accordion() {
   const allPanel = document.querySelectorAll('.panel');
 
   acc.forEach((item) => {
-    item.addEventListener('click', function () {
+    item.addEventListener('click', (elem) => {
       acc.forEach((item) => {
         item.classList.remove('active', 'animate__slideInLeft');
-        allPanel.forEach((elem) => {
-          elem.style.maxHeight = null;
-        });
+        item.nextElementSibling.style.maxHeight = null;
       });
-      this.classList.add('active', 'animate__slideInLeft');
-      let panel = this.nextElementSibling;
+      elem.target.classList.add('active', 'animate__slideInLeft');
+      let panel = elem.target.nextElementSibling;
       panel.style.maxHeight = panel.scrollHeight + 'px';
     });
   });
