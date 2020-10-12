@@ -8,7 +8,6 @@ function init() {
 
 function accordion() {
   const acc = document.querySelectorAll('.acc');
-  const allPanel = document.querySelectorAll('.panel');
 
   acc.forEach((item) => {
     item.addEventListener('click', (elem) => {
@@ -17,7 +16,7 @@ function accordion() {
         item.nextElementSibling.style.maxHeight = null;
       });
       elem.target.classList.add('active', 'animate__slideInLeft');
-      let panel = elem.target.nextElementSibling;
+      const panel = elem.target.nextElementSibling;
       panel.style.maxHeight = panel.scrollHeight + 'px';
     });
   });
