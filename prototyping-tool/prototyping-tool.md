@@ -1,6 +1,6 @@
-##Allgemeine Beschreibung
+## Allgemeine Beschreibung
 
-##Fidelity
+## Fidelity
 
 **Interaktivität:**
 
@@ -9,8 +9,8 @@
 **Inhaltsentwicklung:**
 
 
-##Komplexität
+## Komplexität
 
-##Beispiele
+## Beispiele
 
-##Grenzen
+## Grenzen
