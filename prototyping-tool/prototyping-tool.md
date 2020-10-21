@@ -14,6 +14,7 @@ Wie bereits in der offiziellen Beschreibung von Lunacy deutlich wird, ist das Ke
 **Interaktivität:**
 
 Mithilfe des Prototyping features lassen sich interaktive Prototypes mit einem hohen Reifegrad erstellen.
+
 <p align="center">
   <img src="./proto-demo.gif">
   https://docs.icons8.com/prototyping/#introduction
