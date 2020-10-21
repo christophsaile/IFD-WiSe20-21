@@ -50,3 +50,5 @@ Die Oberfläche von Lunacy ist sehr intuitiv und anschaulich gestaltet. Wer bere
 
 
 ## Grenzen
+
+Während des testens sind mir keine Grenzen des Tools aufgefallen. Bestimmt hat das Tool Grenzen im Vergleich zu Konkurrenzprodukten, allerdings konnte ich diese aufgrund meiner geringen Erfahrung und des begrenzten Rahmens der Arbeit nicht ausreizen.
