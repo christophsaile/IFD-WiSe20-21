@@ -17,7 +17,6 @@ Mithilfe des Prototyping features lassen sich interaktive Prototypes mit einem h
 
 <p align="center">
   <img src="./proto-demo.gif">
-  https://docs.icons8.com/prototyping/#introduction
 </p>
 
 **Visualisierung:**
