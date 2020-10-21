@@ -13,7 +13,7 @@ Wie bereits in der offiziellen Beschreibung von Lunacy deutlich wird, ist das Ke
 
 **Interaktivität:**
 
-Mithilfe des Prototyping features lassen sich interaktive Prototypes mit einem hohen Reifegrad erstellen.
+Mithilfe des Prototyping features lassen sich interaktive Prototypen mit einem hohen Reifegrad erstellen.
 
 <p align="center">
   <img src="./proto-demo.gif">
@@ -23,7 +23,7 @@ Mithilfe des Prototyping features lassen sich interaktive Prototypes mit einem h
 
 **Visualisierung:**
 
-Die Visualisierung hat bei Lunacy einen sehr hohen Reifegrad. Durch das Integrieren von Graphiken, das ausrichten von Objekten und das festlegen von Abständen lässt sich ein Prototyp erstellen, welcher aussehen kann wie das spätere Live System.
+Die Visualisierung hat bei Lunacy einen sehr hohen Reifegrad. Durch das integrieren von Graphiken, das ausrichten von Objekten und das festlegen von Abständen lässt sich ein Prototyp erstellen, welcher aussieht wie das spätere Live System.
 
 **Inhaltsentwicklung:**
 
@@ -43,5 +43,10 @@ Die Oberfläche von Lunacy ist sehr intuitiv und anschaulich gestaltet. Wer bere
 
 
 ## Beispiele
+
+<p align="center">
+  <img src="./sketch/Full HD.png">
+</p>
+
 
 ## Grenzen
