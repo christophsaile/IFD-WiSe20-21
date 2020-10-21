@@ -45,7 +45,11 @@ Die Oberfläche von Lunacy ist sehr intuitiv und anschaulich gestaltet. Wer bere
 ## Beispiele
 
 <p align="center">
-  <img src="./sketch/Full HD.png">
+  <img src="./sketch/christoph.png">
+</p>
+
+<p align="center">
+  <img src="./sketch/ui.png">
 </p>
 
 
