@@ -25,6 +25,10 @@ Mithilfe des Prototyping features lassen sich interaktive Prototypen mit einem h
 
 Die Visualisierung hat bei Lunacy einen sehr hohen Reifegrad. Durch das integrieren von Graphiken, das ausrichten von Objekten und das festlegen von Abständen lässt sich ein Prototyp erstellen, welcher aussieht wie das spätere Live System.
 
+<p align="center">
+  <img src="./sketch/ui.png">
+</p>
+
 **Inhaltsentwicklung:**
 
 Die Inhaltsentwicklung hat ebenfalls einen sehr hohen Reifegrad. Mithilfe von Icons, Fotos, UI-Elementen und Vektorgrafiken lassen sich sehr schnell Protoypen mit echten Inhalten befüllen.
@@ -47,11 +51,6 @@ Die Oberfläche von Lunacy ist sehr intuitiv und anschaulich gestaltet. Wer bere
 <p align="center">
   <img src="./sketch/christoph.png">
 </p>
-
-<p align="center">
-  <img src="./sketch/ui.png">
-</p>
-
 
 ## Grenzen
 
