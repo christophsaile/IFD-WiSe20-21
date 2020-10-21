@@ -1,4 +1,7 @@
-<img src="./lunacy_free_sketch_preview_for_windows.png" style="text-align:center;">
+<p align="center">
+  <img src="./lunacy_free_sketch_preview_for_windows.png">
+</p>
+
 
 ## Allgemeine Beschreibung
 
