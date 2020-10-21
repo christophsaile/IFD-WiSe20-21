@@ -1,4 +1,4 @@
-![alt text](./lunacy_free_sketch_preview_for_windows)( "Lunacy")
+![alt text](./lunacy_free_sketch_preview_for_windows.png)( "Lunacy")
 
 ## Allgemeine Beschreibung
 
