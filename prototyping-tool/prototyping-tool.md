@@ -1,8 +1,6 @@
 <p align="center">
-    <figure>
     <img src="./lunacy_free_sketch_preview_for_windows.png">
-    <figurecaption>https://cdnd.icons8.com/download/images/lunacy_free_sketch_preview_for_windows.png</figurecaption>
-    </figure>
+    https://cdnd.icons8.com/download/images/lunacy_free_sketch_preview_for_windows.png
 </p>
 
 ## Allgemeine Beschreibung
