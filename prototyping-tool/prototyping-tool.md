@@ -28,7 +28,7 @@ Die Visualisierung hat bei Lunacy einen sehr hohen Reifegrad. Durch das Integrie
 Die Inhaltsentwicklung hat ebenfalls einen sehr hohen Reifegrad. Mithilfe von Icons, Fotos, UI-Elementen und Vektorgrafiken lassen sich sehr schnell Protoypen mit echten Inhalten befüllen.
 
 <p align="center">
-  <img src="./visualisierung.png">
+  <img src="./visualisierung.PNG">
 </p>
 
 ## Komplexität
@@ -36,7 +36,7 @@ Die Inhaltsentwicklung hat ebenfalls einen sehr hohen Reifegrad. Mithilfe von Ic
 Die Oberfläche von Lunacy ist sehr intuitiv und anschaulich gestaltet. Wer bereits mit anderen Grafik - Programmen gearbeitet hat findet sich hier sehr schnell zurecht. Für Nutzer, welche zurvor überhaupt keine Berührungpunkte mit einem Grafik - Programm hatten, empfiehlt es sich die Tutorials anzuschauen. Dort werden dem Nutzer die Grundlagen beigebracht.
 
 <p align="center">
-  <img src="./tutorial.png">
+  <img src="./tutorial.PNG">
 </p>
 
 
