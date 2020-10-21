@@ -13,11 +13,11 @@ Wie bereits in der offiziellen Beschreibung von Lunacy deutlich wird, ist das Ke
 
 **Interaktivität:**
 
-Mithilfe des Prototyping features lassen sich interaktive Prototypes mit einem hohen Reifegrad erstellen. 
-
-<video autoplay muted loop playsinline>
-    <source src="https://docs.icons8.com/public/proto-demo.mp4">
-</video>
+Mithilfe des Prototyping features lassen sich interaktive Prototypes mit einem hohen Reifegrad erstellen.
+<p align="center">
+  <img src="./proto-demo.gif">
+  https://docs.icons8.com/prototyping/#introduction
+</p>
 
 **Visualisierung:**
 
