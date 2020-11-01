@@ -13,4 +13,4 @@ Christoph Saile, Interface Design, WiSe 2020/2021, OMB 5
 <a href="https://christophsaile.github.io/IFD-WiSe20-21/prototype-intranet/prototyp-intranet.pdf">Konzeptentwurf</a>
 
 ## Aufgabe 3:
-<a href="https://christophsaile.github.io/IFD-WiSe20-21/gui-high-fid/">Wahrnehmung und Aufmerksamkeit</a>
+<a href="https://www.figma.com/proto/8fxQBeadq3NuhbZb1ARgSC/gui-high-fid?node-id=0%3A2&scaling=min-zoom">Wahrnehmung und Aufmerksamkeit</a>
