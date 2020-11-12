@@ -20,31 +20,52 @@ body {
 main {
   display: flex;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 h2 {
-  margin-bottom: 5rem;
+  margin-bottom: 8rem;
   font-size: 10rem;
 }
 
+.startScreen {
+  margin: auto;
+  text-align: center;
+}
 .startScreen,
 .conversation {
   display: none;
-  margin: auto;
-  text-align: center;
+  width: 70vw;
+  max-width: 1440px;
+  padding-top: 5rem;
 }
 
 .active {
   display: block;
 }
 
+.active.conversation {
+  display: flex;
+}
+.conversation__intro {
+  width: 50%;
+  margin: auto;
+}
+
+.conversation__intro button {
+  text-align: center;
+}
+
+.conversation__messages {
+  width: 50%;
+}
+
 button {
   background-image: linear-gradient(
     to right,
-    #ff512f 0%,
-    #dd2476 51%,
-    #ff512f 100%
+    #aa076b 0%,
+    #61045f 51%,
+    #aa076b 100%
   );
 }
 button {
@@ -69,4 +90,41 @@ button:hover {
 
 button:focus {
   outline: none;
+}
+
+.userInput {
+  margin-left: auto;
+  background-image: linear-gradient(
+    to right,
+    #1d976c 0%,
+    #93f9b9 51%,
+    #1d976c 100%
+  );
+}
+
+.userOutput {
+  background-image: linear-gradient(
+    to right,
+    #aa076b 0%,
+    #61045f 51%,
+    #aa076b 100%
+  );
+}
+.userInput,
+.userOutput {
+  display: block;
+  width: 65%;
+  margin-top: 3rem;
+  padding: 2.5rem 4rem;
+  border-radius: 2rem;
+  min-height: 10rem;
+  transition: 0.5s;
+  background-size: 200% auto;
+}
+
+.userOutput:hover,
+.userInput:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }
