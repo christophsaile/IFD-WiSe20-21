@@ -107,11 +107,13 @@ function init() {
 
 function createNewMessageBox(text, typeOfInput) {
   const creatElem = document.createElement('section');
+  const addText = document.createTextNode(text);
   const addClass = creatElem.classList.add(
     typeOfInput,
     'animate__animated',
     'animate__fadeIn'
   );
-  creatElem.innerHTML = text;
+  creatElem.append(addText);
   document.querySelector('.conversation__messages').appendChild(creatElem);
+  document.querySelector('.conversation__messages').lastElementChild.scrollIntoView();
 }

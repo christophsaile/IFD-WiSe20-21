@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -32,12 +33,17 @@ h2 {
   margin: auto;
   text-align: center;
 }
+
+.conversation {
+  margin-top: 20vh;
+  margin-bottom: 5rem;
+}
+
 .startScreen,
 .conversation {
   display: none;
   width: 70vw;
   max-width: 1440px;
-  padding-top: 5rem;
 }
 
 .active {
@@ -49,7 +55,6 @@ h2 {
 }
 .conversation__intro {
   width: 50%;
-  margin: auto;
 }
 
 .conversation__intro button {
