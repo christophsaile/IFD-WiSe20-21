@@ -2,20 +2,25 @@ window.addEventListener('load', onLoad());
 const artyom = new Artyom();
 const commands = [
   {
-    indexes: [
-      'kannst du mir sagen was heute alles ansteht',
-      'kannst du mich auf den aktuellen Stand bringen',
-    ],
+    indexes: ['Morgen Sammy ich bin noch etwas müde.'],
     action: function () {
-      const answer = 'sehr gerne, mit was soll ich beginnen';
+      const answer = 'Soll ich deine guten Morgen Playlist abspielen';
       artyom.say(answer);
       createNewMessageBox(answer, 'userOutput');
     },
   },
   {
-    indexes: ['ich bin noch etwas müde'],
+    indexes: ['Das wäre super sammy'],
     action: function () {
-      const answer = 'soll ich deine guten Morgen Playlist abspielen';
+      const answer = 'Du hörst jetzt von "Ed Sheeran - Perfect"';
+      artyom.say(answer);
+      createNewMessageBox(answer, 'userOutput');
+    },
+  },
+  {
+    indexes: ['Hey Sammy kannst du mir sagen was heute alles ansteht'],
+    action: function () {
+      const answer = 'Sehr gerne, mit was soll ich beginnen';
       artyom.say(answer);
       createNewMessageBox(answer, 'userOutput');
     },
@@ -33,7 +38,7 @@ const commands = [
     indexes: ['welche Vorlesungen habe ich heute'],
     action: function () {
       const answer =
-        'Du hast heute zwei Blöcke Vorlesung. Zuerst hast du von 09:45 - 11:15 Uhr Interface Design. Im Anschluss hast du noch von 11:15 - 13:15 Uhr die Veranstaltung Streaming Anwendungen';
+        'Du hast heute im ersten Block Interface Design. Im zweiten Bocken hast du noch Streaming Anwendungen';
       artyom.say(answer);
       createNewMessageBox(answer, 'userOutput');
     },
@@ -47,7 +52,80 @@ const commands = [
       createNewMessageBox(answer, 'userOutput');
     },
   },
+  {
+    indexes: ['das wäre super Sammy'],
+    action: function () {
+      const answer =
+        'Die E-Mail stammt vom Sekretariat der Hochschule und hat den Betreff "Anmeldebestätigung Tag der Medien". Soll ich dir den Inhalt vorlesen?';
+      artyom.say(answer);
+      createNewMessageBox(answer, 'userOutput');
+    },
+  },
+  {
+    indexes: ['das wäre super Sammy'],
+    action: function () {
+      const answer =
+        'Die E-Mail stammt vom Sekretariat der Hochschule und hat den Betreff "Anmeldebestätigung Tag der Medien". Soll ich dir den Inhalt vorlesen?';
+      artyom.say(answer);
+      createNewMessageBox(answer, 'userOutput');
+    },
+  },
+  {
+    indexes: ['Kannst du mir zeigen was es heute zum Essen gibt'],
+    action: function () {
+      const answer = 'Natürlich, ich öffne dir den aktuellen Essensplan';
+      artyom.say(answer);
+      createNewMessageBox(answer, 'userOutput');
+      window.setTimeout(() => {
+        document
+          .querySelector('.food')
+          .classList.add('animate__animated', 'animate__fadeIn', 'active');
+      }, 3000);
+    },
+  },
+  {
+    indexes: ['Danke du kannst den Plan wieder schließen'],
+    action: function () {
+      const answer =
+        'Alles klar';
+      artyom.say(answer);
+      createNewMessageBox(answer, 'userOutput');
+      window.setTimeout(() => {
+        document
+          .querySelector('.food')
+          .classList.remove('animate__animated', 'animate__fadeIn', 'active');
+      }, 2500);
+    },
+  },
+  {
+    indexes: ['Habe ich heute Termine die ich warnehmen muss'],
+    action: function () {
+      const answer =
+        'Du hast heute Mittag einen Termin bei deinem Artzt, soll ich dich nochmals dran erinnern?';
+      artyom.say(answer);
+      createNewMessageBox(answer, 'userOutput');
+    },
+  },
+  {
+    indexes: ['Ja bitte'],
+    action: function () {
+      const answer =
+        'Hast du noch weitere Fragen?';
+      artyom.say(answer);
+      createNewMessageBox(answer, 'userOutput');
+    },
+  },
+  {
+    indexes: ['Nein ich muss jetzt los kannst du noch das Garagentor für mein Raumschiff öffnen'],
+    action: function () {
+      const answer =
+        'Haha Benni, ich öffne das Garagentor für dein Fahrrad. Bis später';
+      artyom.say(answer);
+      createNewMessageBox(answer, 'userOutput');
+    },
+  },
 ];
+
 function onLoad() {
   document.querySelector('.startButton').addEventListener('click', () => {
     startArtyom();
@@ -82,6 +160,7 @@ function startArtyom() {
     }, 250);
   }
   startContinuousArtyom();
+
   const answer =
     'Hey Benni, ich hoffe du hast gut schlafen. Wie geht es dir heute';
   artyom.say(answer);
