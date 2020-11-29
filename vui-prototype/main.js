@@ -2,11 +2,11 @@ window.addEventListener('load', onLoad());
 const artyom = new Artyom();
 const commands = [
   {
-    indexes: ['Morgen Sammy ich bin noch etwas müde.'],
+    indexes: ['Morgen Sammy ich bin noch etwas müde'],
     action: function () {
       const answer = 'Soll ich deine guten Morgen Playlist abspielen';
       artyom.say(answer);
-      createNewMessageBox(answer, 'userOutput');
+      updateMessageBox(answer, 'userOutput');
     },
   },
   {
@@ -14,7 +14,7 @@ const commands = [
     action: function () {
       const answer = 'Du hörst jetzt von "Ed Sheeran - Perfect"';
       artyom.say(answer);
-      createNewMessageBox(answer, 'userOutput');
+      updateMessageBox(answer, 'userOutput');
     },
   },
   {
@@ -22,7 +22,7 @@ const commands = [
     action: function () {
       const answer = 'Sehr gerne, mit was soll ich beginnen';
       artyom.say(answer);
-      createNewMessageBox(answer, 'userOutput');
+      updateMessageBox(answer, 'userOutput');
     },
   },
   {
@@ -31,16 +31,16 @@ const commands = [
       const answer =
         'Bis Mittwoch, den 11.11.2020, musst du noch die Aufgabe 4 in Interface Design erledigen. Soll ich dir die Aufgabenstellung vorlesen';
       artyom.say(answer);
-      createNewMessageBox(answer, 'userOutput');
+      updateMessageBox(answer, 'userOutput');
     },
   },
   {
     indexes: ['welche Vorlesungen habe ich heute'],
     action: function () {
       const answer =
-        'Du hast heute im ersten Block Interface Design. Im zweiten Bocken hast du noch Streaming Anwendungen';
+        'Du hast heute im ersten Block Interface Design. Im zweiten Block hast du noch Streaming Anwendungen';
       artyom.say(answer);
-      createNewMessageBox(answer, 'userOutput');
+      updateMessageBox(answer, 'userOutput');
     },
   },
   {
@@ -49,7 +49,7 @@ const commands = [
       const answer =
         'Du hast eine neue E-Mail erhalten. Soll ich dir den Absender und den Betreff vorlesen';
       artyom.say(answer);
-      createNewMessageBox(answer, 'userOutput');
+      updateMessageBox(answer, 'userOutput');
     },
   },
   {
@@ -58,7 +58,7 @@ const commands = [
       const answer =
         'Die E-Mail stammt vom Sekretariat der Hochschule und hat den Betreff "Anmeldebestätigung Tag der Medien". Soll ich dir den Inhalt vorlesen?';
       artyom.say(answer);
-      createNewMessageBox(answer, 'userOutput');
+      updateMessageBox(answer, 'userOutput');
     },
   },
   {
@@ -67,7 +67,7 @@ const commands = [
       const answer =
         'Die E-Mail stammt vom Sekretariat der Hochschule und hat den Betreff "Anmeldebestätigung Tag der Medien". Soll ich dir den Inhalt vorlesen?';
       artyom.say(answer);
-      createNewMessageBox(answer, 'userOutput');
+      updateMessageBox(answer, 'userOutput');
     },
   },
   {
@@ -75,7 +75,7 @@ const commands = [
     action: function () {
       const answer = 'Natürlich, ich öffne dir den aktuellen Essensplan';
       artyom.say(answer);
-      createNewMessageBox(answer, 'userOutput');
+      updateMessageBox(answer, 'userOutput');
       window.setTimeout(() => {
         document
           .querySelector('.food')
@@ -86,15 +86,14 @@ const commands = [
   {
     indexes: ['Danke du kannst den Plan wieder schließen'],
     action: function () {
-      const answer =
-        'Alles klar';
+      const answer = 'Alles klar';
       artyom.say(answer);
-      createNewMessageBox(answer, 'userOutput');
-      window.setTimeout(() => {
-        document
-          .querySelector('.food')
-          .classList.remove('animate__animated', 'animate__fadeIn', 'active');
-      }, 2500);
+
+      document
+        .querySelector('.food')
+        .classList.remove('animate__animated', 'animate__fadeIn', 'active');
+
+      updateMessageBox(answer, 'userOutput');
     },
   },
   {
@@ -103,25 +102,26 @@ const commands = [
       const answer =
         'Du hast heute Mittag einen Termin bei deinem Artzt, soll ich dich nochmals dran erinnern?';
       artyom.say(answer);
-      createNewMessageBox(answer, 'userOutput');
+      updateMessageBox(answer, 'userOutput');
     },
   },
   {
     indexes: ['Ja bitte'],
     action: function () {
-      const answer =
-        'Hast du noch weitere Fragen?';
+      const answer = 'Hast du noch weitere Fragen?';
       artyom.say(answer);
-      createNewMessageBox(answer, 'userOutput');
+      updateMessageBox(answer, 'userOutput');
     },
   },
   {
-    indexes: ['Nein ich muss jetzt los kannst du noch das Garagentor für mein Raumschiff öffnen'],
+    indexes: [
+      'Nein ich muss jetzt los kannst du noch das Garagentor für mein Raumschiff öffnen',
+    ],
     action: function () {
       const answer =
         'Haha Benni, ich öffne das Garagentor für dein Fahrrad. Bis später';
       artyom.say(answer);
-      createNewMessageBox(answer, 'userOutput');
+      updateMessageBox(answer, 'userOutput');
     },
   },
 ];
@@ -130,7 +130,7 @@ function onLoad() {
   document.querySelector('.startButton').addEventListener('click', () => {
     startArtyom();
   });
-  document.querySelector('.endButton').addEventListener('click', () => {
+  document.querySelector('.close').addEventListener('click', () => {
     endArtyom();
   });
 }
@@ -142,7 +142,10 @@ function startArtyom() {
   document
     .querySelector('.conversation')
     .classList.add('active', 'animate__animated', 'animate__fadeIn');
+  document.querySelector('.conversation__intro').classList.add('active');
+
   artyom.addCommands(commands);
+
   function startContinuousArtyom() {
     artyom.fatality();
     setTimeout(function () {
@@ -162,12 +165,11 @@ function startArtyom() {
   startContinuousArtyom();
 
   const answer =
-    'Hey Benni, ich hoffe du hast gut schlafen. Wie geht es dir heute';
+    'Hey Benni, ich hoffe du hast gut geschlafen. Wie geht es dir heute';
   artyom.say(answer);
-  createNewMessageBox(answer, 'userOutput');
   artyom.redirectRecognizedTextOutput(function (recognized, isFinal) {
-    if (isFinal) {
-      createNewMessageBox(recognized, 'userInput');
+    if (recognized) {
+      updateMessageBox(recognized, 'userInput');
     } else {
       console.log(recognized);
     }
@@ -181,23 +183,25 @@ function endArtyom() {
   document
     .querySelector('.conversation')
     .classList.remove('active', 'animate__animated', 'animate__fadeIn');
+  document.querySelector('.conversation__intro').classList.add('active');
+  document.querySelector('.conversation__messages').classList.remove('active');
+  document.querySelector('.conversation__userMessages').innerHTML = '';
+  document.querySelector('.conversation__vuiMessages').innerHTML = '';
+
   artyom.say('Bis bald Benni');
   artyom.dontObey();
   document.querySelector('.conversation__messages').innerHTML = '';
   console.log('Closed!');
 }
 
-function createNewMessageBox(text, typeOfInput) {
-  const creatElem = document.createElement('section');
-  const addText = document.createTextNode(text);
-  const addClass = creatElem.classList.add(
-    typeOfInput,
-    'animate__animated',
-    'animate__fadeIn'
-  );
-  creatElem.append(addText);
-  document.querySelector('.conversation__messages').appendChild(creatElem);
+function updateMessageBox(text, typeOfInput) {
+  document.querySelector('.conversation__intro').classList.remove('active');
   document
     .querySelector('.conversation__messages')
-    .lastElementChild.scrollIntoView();
+    .classList.add('active', 'animate__animated', 'animate__fadeIn');
+  if (typeOfInput == 'userInput') {
+    document.querySelector('.conversation__userMessages').innerHTML = text;
+  } else {
+    document.querySelector('.conversation__vuiMessages').innerHTML = text;
+  }
 }
