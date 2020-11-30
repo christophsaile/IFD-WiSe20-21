@@ -169,8 +169,8 @@ button:focus::after {
 .deco {
   display: block;
   width: 20rem;
-  height: 0.3rem;
-  margin: 1rem 0;
+  height: 0.4rem;
+  margin: 2rem 0;
 }
 
 .deco__user {

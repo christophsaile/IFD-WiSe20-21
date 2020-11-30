@@ -2,7 +2,7 @@ window.addEventListener('load', onLoad());
 const artyom = new Artyom();
 const commands = [
   {
-    indexes: ['Morgen Sammy ich bin noch etwas müde'],
+    indexes: ['morgen ich bin noch etwas müde'],
     action: function () {
       const answer = 'Soll ich deine guten Morgen Playlist abspielen';
       artyom.say(answer);
@@ -10,7 +10,7 @@ const commands = [
     },
   },
   {
-    indexes: ['Das wäre super sammy'],
+    indexes: ['das wäre super'],
     action: function () {
       const answer = 'Du hörst jetzt von "Ed Sheeran - Perfect"';
       artyom.say(answer);
@@ -18,7 +18,7 @@ const commands = [
     },
   },
   {
-    indexes: ['Hey Sammy kannst du mir sagen was heute alles ansteht'],
+    indexes: ['kannst du mir sagen was heute alles ansteht'],
     action: function () {
       const answer = 'Sehr gerne, mit was soll ich beginnen';
       artyom.say(answer);
@@ -53,7 +53,7 @@ const commands = [
     },
   },
   {
-    indexes: ['das wäre super Sammy'],
+    indexes: ['das wäre nett von dir'],
     action: function () {
       const answer =
         'Die E-Mail stammt vom Sekretariat der Hochschule und hat den Betreff "Anmeldebestätigung Tag der Medien". Soll ich dir den Inhalt vorlesen?';
@@ -62,16 +62,7 @@ const commands = [
     },
   },
   {
-    indexes: ['das wäre super Sammy'],
-    action: function () {
-      const answer =
-        'Die E-Mail stammt vom Sekretariat der Hochschule und hat den Betreff "Anmeldebestätigung Tag der Medien". Soll ich dir den Inhalt vorlesen?';
-      artyom.say(answer);
-      updateMessageBox(answer, 'userOutput');
-    },
-  },
-  {
-    indexes: ['Kannst du mir zeigen was es heute zum Essen gibt'],
+    indexes: ['kannst du mir zeigen was es heute zu Essen gibt'],
     action: function () {
       const answer = 'Natürlich, ich öffne dir den aktuellen Essensplan';
       artyom.say(answer);
@@ -84,7 +75,7 @@ const commands = [
     },
   },
   {
-    indexes: ['Danke du kannst den Plan wieder schließen'],
+    indexes: ['danke du kannst den Plan wieder schließen'],
     action: function () {
       const answer = 'Alles klar';
       artyom.say(answer);
@@ -97,7 +88,7 @@ const commands = [
     },
   },
   {
-    indexes: ['Habe ich heute Termine die ich warnehmen muss'],
+    indexes: ['habe ich heute Termine die ich wahrnehmen muss'],
     action: function () {
       const answer =
         'Du hast heute Mittag einen Termin bei deinem Artzt, soll ich dich nochmals dran erinnern?';
@@ -106,7 +97,7 @@ const commands = [
     },
   },
   {
-    indexes: ['Ja bitte'],
+    indexes: ['ja bitte'],
     action: function () {
       const answer = 'Hast du noch weitere Fragen?';
       artyom.say(answer);
@@ -115,7 +106,7 @@ const commands = [
   },
   {
     indexes: [
-      'Nein ich muss jetzt los kannst du noch das Garagentor für mein Raumschiff öffnen',
+      'nein ich muss jetzt los kannst du noch das Garagentor für mein Raumschiff öffnen',
     ],
     action: function () {
       const answer =
@@ -124,6 +115,14 @@ const commands = [
       updateMessageBox(answer, 'userOutput');
     },
   },
+  {
+    indexes: [
+      'nein danke',
+    ],
+    action: function () {
+      updateMessageBox('', 'userOutput');
+    },
+  }
 ];
 
 function onLoad() {
@@ -168,10 +167,10 @@ function startArtyom() {
     'Hey Benni, ich hoffe du hast gut geschlafen. Wie geht es dir heute';
   artyom.say(answer);
   artyom.redirectRecognizedTextOutput(function (recognized, isFinal) {
-    if (recognized) {
+    if (isFinal) {
       updateMessageBox(recognized, 'userInput');
     } else {
-      console.log(recognized);
+      updateMessageBox(recognized, 'userInput');
     }
   });
 }
