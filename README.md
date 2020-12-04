@@ -21,3 +21,6 @@ Christoph Saile, Interface Design, WiSe 2020/2021, OMB 5
 ## Aufgabe 5:
 <a href="https://christophsaile.github.io/IFD-WiSe20-21/vui-prototype/vui.mp4">VUI Umsetzung (Screencast)</a>
 <a href="https://github.com/christophsaile/IFD-WiSe20-21/tree/main/vui-prototype">VUI Umsetzung (Codebase)</a><br>
+
+## Aufgabe 6:
+<a href="https://christophsaile.github.io/IFD-WiSe20-21/vr-cardboard/vr-cardboard.pdf">VR Cardboard Brille</a>
