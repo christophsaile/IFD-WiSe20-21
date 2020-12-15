@@ -26,7 +26,7 @@ Christoph Saile, Interface Design, WiSe 2020/2021, OMB 5
 <a href="https://christophsaile.github.io/IFD-WiSe20-21/vr-cardboard/vr-cardboard.pdf">VR Cardboard Brille</a>
 
 ## Aufgabe7:
-<a href="https://christophsaile.github.io/IFD-WiSe20-21/vr-video/storyboard.pdf">VR-Storyboard</a>
+<a href="https://christophsaile.github.io/IFD-WiSe20-21/vr-video/storyboard.pdf">VR-Storyboard</a> <br />
 <a href="https://christophsaile.github.io/IFD-WiSe20-21/vr-video/vr-video.mp4">VR-Video</a>
 
 
