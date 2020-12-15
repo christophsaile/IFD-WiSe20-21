@@ -27,6 +27,6 @@ Christoph Saile, Interface Design, WiSe 2020/2021, OMB 5
 
 ## Aufgabe7:
 <a href="https://christophsaile.github.io/IFD-WiSe20-21/vr-video/storyboard.pdf">VR-Storyboard</a> <br />
-<a href="https://christophsaile.github.io/IFD-WiSe20-21/vr-video/vr-video.mp4">VR-Video</a>
+<a href="https://youtu.be/4DSY0kgyDTo">VR-Video</a>
 
 
