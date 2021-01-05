@@ -31,4 +31,4 @@ Christoph Saile, Interface Design, WiSe 2020/2021, OMB 5
 
 ## Aufgabe8: 
 <a href="https://vr.page/2MDxIO1">VR-Prototype (DraftXR Cloud)</a> <br />
-<a href="https://xd.adobe.com/view/c13e48f6-f3cd-49e6-97e1-f52744f591a2-946d/?fullscreen">VR-Prototype (AdobeXd File)</a>
+Note: Für die optimale Bedienung wird ein Controller benötigt
