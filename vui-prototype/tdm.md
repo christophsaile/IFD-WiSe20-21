@@ -14,5 +14,5 @@ Sammy ist mit dem Smarthome, dem HFU Account, dem Smartphone und dem Kalender vo
 
 <a href="https://github.com/christophsaile/IFD-WiSe20-21/tree/main/vui-prototype">Codebase</a>
 
-<a href="https://christophsaile.github.io/IFD-WiSe20-21/vui-prototype/screencast/vui.mp4">Screencast</a>
+<a href="https://christophsaile.github.io/IFD-WiSe20-21/vui-prototype/vui.mp4">Screencast</a>
 </ul>
